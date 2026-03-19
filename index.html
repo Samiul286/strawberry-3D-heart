@@ -132,13 +132,13 @@
 
     <script>
         (function () {
-            const wm = atob("bWFkZSBieSBTYW1p");
+            const wm = atob("bWFkZSBieSBwaW5haw==");
 
             const badge = document.createElement("div");
             badge.id = "wm-badge";
             badge.innerText = wm;
             document.body.appendChild(badge);
-            if (!wm.includes("Sami")) {
+            if (!wm.includes("pinak")) {
                 document.body.innerHTML = "<h1 style='color:red;text-align:center'>Site Integrity Compromised</h1>";
                 throw new Error("dm missing!");
             }
